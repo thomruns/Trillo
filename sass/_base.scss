@@ -1,7 +1,9 @@
 
-//The root pseudoclass allows for the use of CSS variables
+//The root pseudoclass store any CSS variables
 //  CSS variables are defined here to be available to all
-//  other selectors
+//  other selectors throughout the page
+//  always begin w double-dashes and are declared
+//  in code using the keyword var() construct
 
 :root {
     --color-primary: #eb2f64;
@@ -16,6 +18,8 @@
     --color-grey-dark-1: #333;
     --color-grey-dark-2: #777;
     --color-grey-dark-3: #999;
+
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
 }
 
 //Establish universal reset, box behaviors, and rem unit sizing
