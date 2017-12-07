@@ -200,3 +200,62 @@
     padding: 2.5rem;
     
 }
+
+///////////////////////////////////////////
+/////////  GALLERY
+.gallery {
+
+    display: flex;
+
+        &__photo {
+            width: 100%;
+            display: block;
+        }
+}
+
+///////////////////////////////////////////
+/////////  HOTEL OVERVIEW
+.overview {
+
+    &__heading {
+
+
+
+    }
+
+    &__stars {
+
+
+    }
+
+    &__icon-star {
+
+
+    }
+
+    &__location {
+
+
+    }
+
+    &__icon-location {
+
+
+    }
+
+    &__rating {
+
+
+    }
+
+    &__rating-average {
+
+
+    }
+
+    &__rating-count {
+
+        
+    }
+
+}
