@@ -24,6 +24,10 @@
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     background-color: var(--color-grey-dark-1);
 
     flex: 0 0 18%; //do not grow or shrink, but maintain 18% available space width
@@ -32,7 +36,8 @@
 
 .hotel-view {
     background-color: #fff;
-    background-color: orangered;
+    background-color: orangered; //TEST ONLY
+    height: 80rem; //TEST ONLY
 
     flex: 1; //element should grow into all available space
 
