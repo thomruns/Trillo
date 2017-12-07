@@ -217,6 +217,9 @@
 /////////  HOTEL OVERVIEW
 .overview {
 
+    display: flex;
+    
+
     &__heading {
 
 
@@ -224,21 +227,24 @@
     }
 
     &__stars {
-
-
+        //flex: 1;  //takes up all available space between itself and next element
+        margin-right: auto;  //use this instead of flex: 1
     }
 
-    &__icon-star {
-
-
-    }
-
-    &__location {
-
+    &__icon-star,
+    &__icon-location {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
 
     }
 
     &__icon-location {
+        
+        
+    }
+
+    &__location {
 
 
     }
@@ -255,7 +261,7 @@
 
     &__rating-count {
 
-        
+
     }
 
 }
