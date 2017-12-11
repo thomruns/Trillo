@@ -61,7 +61,11 @@
 }
 
 .user-reviews {
-    background-color: yellowgreen;
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    font-size: 1.4rem;
     flex: 1; //occupy the remaining space
+    margin-right: 0;
 
 }
