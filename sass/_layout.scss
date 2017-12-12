@@ -46,6 +46,7 @@
     display: flex;
     padding: 4.5rem;
     border-bottom: var(--line);
+    font-size: 1.4rem;
 
 
 }
@@ -54,18 +55,13 @@
     background-color: #fff;
     box-shadow: var(--shadow-light);
     padding: 3rem;
-    font-size: 1.4rem;
 
     flex: 0 0 60%; //neither grow nor shrink; occupy 60% of available space
     margin-right: 4.5rem;
 }
 
 .user-reviews {
-    background-color: #fff;
-    box-shadow: var(--shadow-light);
-    padding: 3rem;
-    font-size: 1.4rem;
+    
     flex: 1; //occupy the remaining space
-    margin-right: 0;
 
 }
