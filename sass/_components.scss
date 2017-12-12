@@ -300,8 +300,17 @@
     cursor: pointer;
     transition: all .2s;
 
+    & span {
+        margin-left: 3px;
+        transition: margin-left .2s;
+    }
+
     &:hover {
         color: var(--color-grey-dark-1);
+
+        & span {
+            margin-left: 8px;
+        }
     }
 
     &:focus {
@@ -414,9 +423,14 @@
     box-shadow: var(--shadow-light);
     padding: 3rem;
     margin-bottom: 3.5rem;
+    position: relative;
+    overflow: hidden;
+
 
     &__text {
         margin-bottom: 2rem;
+        z-index: 10;
+        position: relative; //position necessary for z-index to work
 
     }
 
@@ -460,5 +474,17 @@
 
     }
 
+    &::before {
+        content: "\201C";
+        position: absolute;
+        top: -3.5rem;
+        left: -.8rem;
+        line-height: 1;
+        font-size: 20rem;
+        color: var(--color-grey-light-2);
+        font-family: san-serif;
+        z-index: 1;
+
+    }
 
 }
