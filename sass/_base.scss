@@ -26,9 +26,15 @@
 
     --gradient-right: to right, var(--color-primary-light), var(--color-primary-dark);
     --gradient-left: to left, var(--color-primary-light), var(--color-primary-dark);
-
-    
+  
 }
+
+
+//SASS variables for media queries; custom variables will not work
+$bp-largest: 75em; //   1200px (1200/16)
+$bp-large: 68.75em;  // 1100px (1100/16)
+$bp-medium: 56.25em; //  900px (900/16)
+$bp-small: 37.5em; //    600px (600/16)
 
 //Establish universal reset, box behaviors, and rem unit sizing
 * {
@@ -45,6 +51,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px based on 16px default sizing  10/16 = 62.5%
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
 }
 
 body {
